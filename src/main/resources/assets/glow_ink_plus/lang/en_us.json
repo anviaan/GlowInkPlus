@@ -13,8 +13,25 @@
   "block.glow_ink_plus.glow_cyan_wool": "Glow Cyan Wool",
   "block.glow_ink_plus.glow_purple_wool": "Glow Purple Wool",
   "block.glow_ink_plus.glow_blue_wool": "Glow Blue Wool",
-  "block.glow_ink_plus.glow_Brown_wool": "Glow Brown Wool",
+  "block.glow_ink_plus.glow_brown_wool": "Glow Brown Wool",
   "block.glow_ink_plus.glow_green_wool": "Glow Green Wool",
   "block.glow_ink_plus.glow_red_wool": "Glow Red Wool",
-  "block.glow_ink_plus.glow_black_wool": "Glow Black Wool"
+  "block.glow_ink_plus.glow_black_wool": "Glow Black Wool",
+
+  "block.glow_ink_plus.glow_white_carpet": "Glow White Carpet",
+  "block.glow_ink_plus.glow_orange_carpet": "Glow Orange Carpet",
+  "block.glow_ink_plus.glow_magenta_carpet": "Glow Magenta Carpet",
+  "block.glow_ink_plus.glow_light_blue_carpet": "Glow Light Blue Carpet",
+  "block.glow_ink_plus.glow_yellow_carpet": "Glow Yellow Carpet",
+  "block.glow_ink_plus.glow_lime_carpet": "Glow Lime Carpet",
+  "block.glow_ink_plus.glow_pink_carpet": "Glow Pink Carpet",
+  "block.glow_ink_plus.glow_gray_carpet": "Glow Gray Carpet",
+  "block.glow_ink_plus.glow_light_gray_carpet": "Glow Light Gray Carpet",
+  "block.glow_ink_plus.glow_cyan_carpet": "Glow Cyan Carpet",
+  "block.glow_ink_plus.glow_purple_carpet": "Glow Purple Carpet",
+  "block.glow_ink_plus.glow_blue_carpet": "Glow Blue Carpet",
+  "block.glow_ink_plus.glow_brown_carpet": "Glow Brown Carpet",
+  "block.glow_ink_plus.glow_green_carpet": "Glow Green Carpet",
+  "block.glow_ink_plus.glow_red_carpet": "Glow Red Carpet",
+  "block.glow_ink_plus.glow_black_carpet": "Glow Black Carpet"
 }
