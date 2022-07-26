@@ -79,7 +79,7 @@ public class ModBlocks {
                     .strength(0.8f).sounds(BlockSoundGroup.WOOL).luminance(state -> 3)
                     .postProcess(ModBlocks::always).emissiveLighting(ModBlocks::always)));
 
-    public static boolean always(BlockState state, BlockView world, BlockPos pos) {return true;}
+    private static boolean always(BlockState state, BlockView world, BlockPos pos) {return true;}
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
