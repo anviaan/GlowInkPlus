@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.anvian.glow_ink_plus.GlowInkSacPlusMod"
+      "net.anvian.glow_ink_plus.GlowInkPlusMod"
     ]
   },
   "mixins": [

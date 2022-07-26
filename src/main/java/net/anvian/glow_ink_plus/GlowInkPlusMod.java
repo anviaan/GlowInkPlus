@@ -5,7 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class GlowInkSacPlusMod implements ModInitializer {
+public class GlowInkPlusMod implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("glow_ink_plus");
 	public static final String MOD_ID = "glow_ink_plus";
 	@Override

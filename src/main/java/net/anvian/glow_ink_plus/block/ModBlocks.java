@@ -1,6 +1,6 @@
 package net.anvian.glow_ink_plus.block;
 
-import net.anvian.glow_ink_plus.GlowInkSacPlusMod;
+import net.anvian.glow_ink_plus.GlowInkPlusMod;
 import net.anvian.glow_ink_plus.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -83,15 +83,15 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
-        return Registry.register(Registry.BLOCK, new Identifier(GlowInkSacPlusMod.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(GlowInkPlusMod.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block){
-        return Registry.register(Registry.ITEM, new Identifier(GlowInkSacPlusMod.MOD_ID, name),
+        return Registry.register(Registry.ITEM, new Identifier(GlowInkPlusMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(ModItemGroup.GLOW_INK_SAC)));
     }
 
     public static void registerModBlocks(){
-        System.out.println("Registering ModBlocks for " + GlowInkSacPlusMod.MOD_ID);
+        System.out.println("Registering ModBlocks for " + GlowInkPlusMod.MOD_ID);
     }
 }
