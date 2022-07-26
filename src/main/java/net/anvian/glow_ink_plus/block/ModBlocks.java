@@ -14,6 +14,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
 public class ModBlocks {
+    //wool
     public static final Block GLOW_WHITE_WOOL = registerBlock("glow_white_wool",
             new Block(FabricBlockSettings.of(Material.WOOL, MapColor.WHITE)
                     .strength(0.8f).sounds(BlockSoundGroup.WOOL).luminance(state -> 3)
