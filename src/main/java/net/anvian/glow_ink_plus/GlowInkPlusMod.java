@@ -1,17 +1,34 @@
 package net.anvian.glow_ink_plus;
 
+import com.mojang.logging.LogUtils;
 import net.anvian.glow_ink_plus.block.ModBlocks;
-import net.fabricmc.api.ModInitializer;
+import net.anvian.glow_ink_plus.item.ModItems;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-public class GlowInkPlusMod implements ModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("glow_ink_plus");
-	public static final String MOD_ID = "glow_ink_plus";
-	@Override
-	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+@Mod(GlowInkPlusMod.MOD_ID)
+public class GlowInkPlusMod
+{
+    public static final String MOD_ID = "glow_ink_plus";
+    private static final Logger LOGGER = LogUtils.getLogger();
 
-		ModBlocks.registerModBlocks();
-	}
+    public GlowInkPlusMod() {
+       IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
+
+        eventBus.addListener(this::setup);
+
+        MinecraftForge.EVENT_BUS.register(this);
+    }
+    private void setup(final FMLCommonSetupEvent event) {
+        LOGGER.info("HELLO FROM PREINIT");
+        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    }
 }

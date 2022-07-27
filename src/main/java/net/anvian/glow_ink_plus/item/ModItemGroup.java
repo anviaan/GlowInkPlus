@@ -1,14 +1,14 @@
 package net.anvian.glow_ink_plus.item;
 
-import net.anvian.glow_ink_plus.GlowInkPlusMod;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.Identifier;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 public class ModItemGroup {
-    public static final ItemGroup GLOW_INK_SAC = FabricItemGroupBuilder.build
-            (new Identifier(GlowInkPlusMod.MOD_ID, "glow_ink_sac"),
-                    () -> new ItemStack(Items.GLOW_INK_SAC));
+    public static final CreativeModeTab GLOW_INK_SAC = new CreativeModeTab("glow_ink_sac") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(Items.GLOW_INK_SAC.asItem());
+        }
+    };
 }
