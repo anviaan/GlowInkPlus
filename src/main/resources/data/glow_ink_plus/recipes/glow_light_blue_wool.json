@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "glow_wool",
   "ingredients": [
     {
       "item": "minecraft:light_blue_wool"
