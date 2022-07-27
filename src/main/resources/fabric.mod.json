@@ -4,12 +4,12 @@
   "version": "${version}",
 
   "name": "Glow Ink Plus Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Add more functions to the glow ink, in this mod you can make the wool and carpets glow ",
   "authors": [
     "anvian"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/glow-ink-plus/",
     "sources": "https://github.com/anviaan/GlowInkPlus"
   },
 
