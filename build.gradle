@@ -18,7 +18,7 @@ apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.0.0-1.18.2'
 group = 'net.anvian.glow_ink_plus' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'glow_ink_plus'
+archivesBaseName = '(Forge)GlowInkPlus'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
