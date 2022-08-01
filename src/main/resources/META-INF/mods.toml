@@ -4,7 +4,7 @@ license="GPL-3.0"
 issueTrackerURL="https://github.com/anviaan/GlowInkPlus/issues"
 [[mods]]
 modId="glow_ink_plus"
-version="1.0.1"
+version="1.0.2"
 displayName="Glow Ink Plus Mod"
 updateJSONURL="https://anvian-page.netlify.app/forge/glow_ink_sac.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/glow-ink-plus"
