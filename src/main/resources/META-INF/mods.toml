@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[43,)"
 license="GPL-3.0"
 issueTrackerURL="https://github.com/anviaan/GlowInkPlus/issues"
 [[mods]]
@@ -14,12 +14,12 @@ description="Add more functions to the glow ink, in this mod you can make the wo
 [[dependencies.glow_ink_plus]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[43,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.glow_ink_plus]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.19.2,1.20)"
     ordering="NONE"
     side="BOTH"
