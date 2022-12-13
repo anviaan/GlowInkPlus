@@ -3,15 +3,17 @@ package net.anvian.glow_ink_plus.block;
 import net.anvian.glow_ink_plus.GlowInkPlusMod;
 import net.anvian.glow_ink_plus.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
 public class ModBlocks {
@@ -151,12 +153,47 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
-        return Registry.register(Registry.BLOCK, new Identifier(GlowInkPlusMod.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, new Identifier(GlowInkPlusMod.MOD_ID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block){
-        return Registry.register(Registry.ITEM, new Identifier(GlowInkPlusMod.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(ModItemGroup.GLOW_INK_SAC)));
+        //hate it...
+        //wool
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_WHITE_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_ORANGE_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_MAGENTA_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_LIGHT_BLUE_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_YELLOW_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_LIME_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_PINK_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_GRAY_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_LIGHT_GRAY_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_CYAN_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_PURPLE_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_BLUE_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_BROWN_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_GREEN_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_RED_WOOL));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_BLACK_WOOL));
+        //carpet
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_WHITE_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_ORANGE_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_MAGENTA_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_LIGHT_BLUE_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_YELLOW_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_LIME_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_PINK_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_GRAY_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_LIGHT_GRAY_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_CYAN_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_PURPLE_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_BLUE_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_BROWN_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_GREEN_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_RED_CARPET));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroup.GLOW_INK_SAC).register(entries -> entries.add(GLOW_BLACK_CARPET));
+        return Registry.register(Registries.ITEM, new Identifier(GlowInkPlusMod.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void registerModBlocks(){
