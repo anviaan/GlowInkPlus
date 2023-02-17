@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "glow_ink_plus:glow_white_carpet",
+    "glow_ink_plus:glow_orange_carpet",
+    "glow_ink_plus:glow_magenta_carpet",
+    "glow_ink_plus:glow_light_blue_carpet",
+    "glow_ink_plus:glow_yellow_carpet",
+    "glow_ink_plus:glow_lime_carpet",
+    "glow_ink_plus:glow_pink_carpet",
+    "glow_ink_plus:glow_gray_carpet",
+    "glow_ink_plus:glow_light_gray_carpet",
+    "glow_ink_plus:glow_cyan_carpet",
+    "glow_ink_plus:glow_purple_carpet",
+    "glow_ink_plus:glow_blue_carpet",
+    "glow_ink_plus:glow_brown_carpet",
+    "glow_ink_plus:glow_green_carpet",
+    "glow_ink_plus:glow_red_carpet",
+    "glow_ink_plus:glow_black_carpet"
+  ]
+}

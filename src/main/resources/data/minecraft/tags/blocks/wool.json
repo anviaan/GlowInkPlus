@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "glow_ink_plus:glow_white_wool",
+    "glow_ink_plus:glow_orange_wool",
+    "glow_ink_plus:glow_magenta_wool",
+    "glow_ink_plus:glow_light_blue_wool",
+    "glow_ink_plus:glow_yellow_wool",
+    "glow_ink_plus:glow_lime_wool",
+    "glow_ink_plus:glow_pink_wool",
+    "glow_ink_plus:glow_gray_wool",
+    "glow_ink_plus:glow_light_gray_wool",
+    "glow_ink_plus:glow_cyan_wool",
+    "glow_ink_plus:glow_purple_wool",
+    "glow_ink_plus:glow_blue_wool",
+    "glow_ink_plus:glow_brown_wool",
+    "glow_ink_plus:glow_green_wool",
+    "glow_ink_plus:glow_red_wool",
+    "glow_ink_plus:glow_black_wool"
+  ]
+}

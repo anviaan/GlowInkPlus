@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.1.0'
+version = '1.2.0'
 group = 'net.anvian.glow_ink_plus'
 archivesBaseName = '(Forge)GlowInkPlus-1.19.3'
 
