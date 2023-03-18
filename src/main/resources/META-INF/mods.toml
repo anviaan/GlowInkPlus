@@ -1,25 +1,27 @@
 modLoader="javafml"
-loaderVersion="[44,)"
+loaderVersion="[45,)"
 license="GPL-3.0"
 issueTrackerURL="https://github.com/anviaan/GlowInkPlus/issues"
+
 [[mods]]
 modId="glow_ink_plus"
 version="1.2.0"
-displayName="Glow Ink Plus Mod"
+isplayName="Glow Ink Plus Mod"
 updateJSONURL="https://anvian-page.netlify.app/forge/glow_ink_sac.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/glow-ink-plus"
 logoFile="icon.png"
 authors="anvian"
 description="Add more functions to the glow ink, in this mod you can make the wool and carpets glow"
+
 [[dependencies.glow_ink_plus]]
     modId="forge"
     mandatory=true
-    versionRange="[44,)"
+    versionRange="[45,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.glow_ink_plus]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.3,1.20)"
+    versionRange="[1.19.4,1.20)"
     ordering="NONE"
     side="BOTH"
