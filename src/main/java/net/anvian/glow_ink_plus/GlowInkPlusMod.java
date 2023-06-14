@@ -5,7 +5,7 @@ import net.anvian.glow_ink_plus.block.ModBlocks;
 import net.anvian.glow_ink_plus.item.ModItemGroup;
 import net.anvian.glow_ink_plus.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,6 +21,8 @@ public class GlowInkPlusMod
     public GlowInkPlusMod() {
        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+       ModItemGroup.register(eventBus);
+
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
@@ -33,8 +35,8 @@ public class GlowInkPlusMod
     private void setup(final FMLCommonSetupEvent event) {
         LOGGER.info("HELLO FROM PREINIT");
     }
-    private void addCreative(CreativeModeTabEvent.BuildContents event){
-        if (event.getTab() == ModItemGroup.GLOW_INK_SAC){
+    private void addCreative(BuildCreativeModeTabContentsEvent event){
+        if (event.getTab() == ModItemGroup.GLOW_INK_SAC.get()){
             event.accept(ModBlocks.GLOW_WHITE_WOOL);
             event.accept(ModBlocks.GLOW_ORANGE_WOOL);
             event.accept(ModBlocks.GLOW_MAGENTA_WOOL);

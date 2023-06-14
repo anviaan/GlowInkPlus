@@ -22,6 +22,6 @@ description="Add more functions to the glow ink, in this mod you can make the wo
 [[dependencies.glow_ink_plus]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4,1.20)"
+    versionRange="[1.20,1.21)"
     ordering="NONE"
     side="BOTH"
