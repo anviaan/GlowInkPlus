@@ -17,7 +17,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "net.anvian.glow_ink_plus.ExampleMod"
+          "net.anvian.glow_ink_plus.GlowInkPlusFabric"
         ]
     },
     "mixins": [
