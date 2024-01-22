@@ -14,8 +14,11 @@ public class GlowInkPlusForge {
         Constants.LOG.info("Hello Forge world!");
         GlowInkPlusCommon.init();
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        Constants.LOG.info("Registering blocks for " + Constants.MOD_NAME + "...");
         ModBlockRegistry.BLOCKS.register(bus);
+        Constants.LOG.info("Registering items for " + Constants.MOD_NAME + "...");
         ModItemRegistry.ITEMS.register(bus);
+        Constants.LOG.info("Registering creative tab for " + Constants.MOD_ID);
         ModTab.TABS.register(bus);
         MinecraftForge.EVENT_BUS.register(this);
     }

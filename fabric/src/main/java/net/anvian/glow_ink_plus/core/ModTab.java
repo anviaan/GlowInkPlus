@@ -14,6 +14,8 @@ import net.minecraft.world.item.Items;
 
 public class ModTab {
     public static void registerTab() {
+        Constants.LOG.info("Registering creative tab for " + Constants.MOD_ID);
+
         ResourceKey<CreativeModeTab> tab = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(Constants.MOD_ID, "tab"));
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, tab, FabricItemGroup.builder()
                 .icon(Items.GLOW_INK_SAC::getDefaultInstance)

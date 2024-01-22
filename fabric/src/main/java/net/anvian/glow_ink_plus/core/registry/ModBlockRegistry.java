@@ -8,6 +8,8 @@ import net.minecraft.resources.ResourceLocation;
 
 public class ModBlockRegistry {
     public static void registerBlocks() {
+        Constants.LOG.info("Registering blocks for " + Constants.MOD_NAME + "...");
+
         //wool
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Constants.MOD_ID, "glow_white_wool"), ModBlocks.GLOW_WHITE_WOOL);
         Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Constants.MOD_ID, "glow_orange_wool"), ModBlocks.GLOW_ORANGE_WOOL);

@@ -11,8 +11,11 @@ public class GlowInkPlusNeoForge {
     public GlowInkPlusNeoForge(IEventBus eventBus) {
         Constants.LOG.info("Hello NeoForge world!");
         GlowInkPlusCommon.init();
+        Constants.LOG.info("Registering blocks for " + Constants.MOD_NAME + "...");
         ModBlockRegistry.BLOCKS.register(eventBus);
+        Constants.LOG.info("Registering items for " + Constants.MOD_NAME + "...");
         ModItemRegistry.ITEMS.register(eventBus);
+        Constants.LOG.info("Registering creative tab for " + Constants.MOD_ID);
         ModTab.TABS.register(eventBus);
     }
 }
