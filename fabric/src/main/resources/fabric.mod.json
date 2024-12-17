@@ -12,6 +12,14 @@
         "sources": "https://github.com/anviaan/GlowInkPlus",
         "issues": "https://github.com/anviaan/GlowInkPlus/issues"
     },
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/glow-ink-plus",
+                "modmenu.modrinth": "https://modrinth.com/mod/glow-ink-plus"
+            }
+        }
+    },
     "license": "${license}",
     "icon": "${mod_id}.png",
     "environment": "*",

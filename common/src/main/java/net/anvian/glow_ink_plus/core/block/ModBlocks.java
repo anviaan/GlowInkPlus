@@ -1,7 +1,11 @@
 package net.anvian.glow_ink_plus.core.block;
 
+import net.anvian.glow_ink_plus.Constants;
 import net.anvian.glow_ink_plus.core.block.custom.ModWoolCarpetBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -22,7 +26,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_WHITE_WOOL_ID)));
     public static final Block GLOW_ORANGE_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_ORANGE)
@@ -32,7 +37,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_ORANGE_WOOL_ID)));
     public static final Block GLOW_MAGENTA_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_MAGENTA)
@@ -42,7 +48,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_MAGENTA_WOOL_ID)));
     public static final Block GLOW_LIGHT_BLUE_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_LIGHT_BLUE)
@@ -52,7 +59,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_LIGHT_BLUE_WOOL_ID)));
     public static final Block GLOW_YELLOW_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_YELLOW)
@@ -62,7 +70,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_YELLOW_WOOL_ID)));
     public static final Block GLOW_LIME_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_LIGHT_GREEN)
@@ -72,7 +81,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_LIME_WOOL_ID)));
     public static final Block GLOW_PINK_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_PINK)
@@ -82,7 +92,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_PINK_WOOL_ID)));
     public static final Block GLOW_GRAY_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_GRAY)
@@ -92,7 +103,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_GRAY_WOOL_ID)));
     public static final Block GLOW_LIGHT_GRAY_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_LIGHT_GRAY)
@@ -102,7 +114,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_LIGHT_GRAY_WOOL_ID)));
     public static final Block GLOW_CYAN_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_CYAN)
@@ -112,7 +125,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_CYAN_WOOL_ID)));
     public static final Block GLOW_PURPLE_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_PURPLE)
@@ -122,7 +136,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_PURPLE_WOOL_ID)));
     public static final Block GLOW_BLUE_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLUE)
@@ -132,7 +147,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_BLUE_WOOL_ID)));
     public static final Block GLOW_BROWN_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BROWN)
@@ -142,7 +158,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_BROWN_WOOL_ID)));
     public static final Block GLOW_GREEN_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_GREEN)
@@ -152,7 +169,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_GREEN_WOOL_ID)));
     public static final Block GLOW_RED_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_RED)
@@ -162,7 +180,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_RED_WOOL_ID)));
     public static final Block GLOW_BLACK_WOOL = new Block(
             BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLACK)
@@ -172,7 +191,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_BLACK_WOOL_ID)));
 
     //carpet
     public static final Block GLOW_WHITE_CARPET = new ModWoolCarpetBlock(
@@ -184,7 +204,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_WHITE_CARPET_ID)));
     public static final Block GLOW_ORANGE_CARPET = new ModWoolCarpetBlock(
             DyeColor.ORANGE,
             BlockBehaviour.Properties.of()
@@ -194,7 +215,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_ORANGE_CARPET_ID)));
     public static final Block GLOW_MAGENTA_CARPET = new ModWoolCarpetBlock(
             DyeColor.MAGENTA,
             BlockBehaviour.Properties.of()
@@ -204,7 +226,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_MAGENTA_CARPET_ID)));
     public static final Block GLOW_LIGHT_BLUE_CARPET = new ModWoolCarpetBlock(
             DyeColor.LIGHT_BLUE,
             BlockBehaviour.Properties.of()
@@ -214,7 +237,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_LIGHT_BLUE_CARPET_ID)));
     public static final Block GLOW_YELLOW_CARPET = new ModWoolCarpetBlock(
             DyeColor.YELLOW,
             BlockBehaviour.Properties.of()
@@ -224,7 +248,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_YELLOW_CARPET_ID)));
     public static final Block GLOW_LIME_CARPET = new ModWoolCarpetBlock(
             DyeColor.LIME,
             BlockBehaviour.Properties.of()
@@ -234,7 +259,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_LIME_CARPET_ID)));
     public static final Block GLOW_PINK_CARPET = new ModWoolCarpetBlock(
             DyeColor.PINK,
             BlockBehaviour.Properties.of()
@@ -244,7 +270,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_PINK_CARPET_ID)));
     public static final Block GLOW_GRAY_CARPET = new ModWoolCarpetBlock(
             DyeColor.GRAY,
             BlockBehaviour.Properties.of()
@@ -254,7 +281,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_GRAY_CARPET_ID)));
     public static final Block GLOW_LIGHT_GRAY_CARPET = new ModWoolCarpetBlock(
             DyeColor.LIGHT_GRAY,
             BlockBehaviour.Properties.of()
@@ -264,7 +292,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_LIGHT_GRAY_CARPET_ID)));
     public static final Block GLOW_CYAN_CARPET = new ModWoolCarpetBlock(
             DyeColor.CYAN,
             BlockBehaviour.Properties.of()
@@ -274,7 +303,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_CYAN_CARPET_ID)));
     public static final Block GLOW_PURPLE_CARPET = new ModWoolCarpetBlock(
             DyeColor.PURPLE,
             BlockBehaviour.Properties.of()
@@ -284,7 +314,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_PURPLE_CARPET_ID)));
     public static final Block GLOW_BLUE_CARPET = new ModWoolCarpetBlock(
             DyeColor.BLUE,
             BlockBehaviour.Properties.of()
@@ -294,7 +325,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_BLUE_CARPET_ID)));
     public static final Block GLOW_BROWN_CARPET = new ModWoolCarpetBlock(
             DyeColor.BROWN,
             BlockBehaviour.Properties.of()
@@ -304,7 +336,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_BROWN_CARPET_ID)));
     public static final Block GLOW_GREEN_CARPET = new ModWoolCarpetBlock(
             DyeColor.GREEN,
             BlockBehaviour.Properties.of()
@@ -314,7 +347,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_GREEN_CARPET_ID)));
     public static final Block GLOW_RED_CARPET = new ModWoolCarpetBlock(
             DyeColor.RED,
             BlockBehaviour.Properties.of()
@@ -324,7 +358,8 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_RED_CARPET_ID)));
     public static final Block GLOW_BLACK_CARPET = new ModWoolCarpetBlock(
             DyeColor.BLACK,
             BlockBehaviour.Properties.of()
@@ -334,9 +369,14 @@ public final class ModBlocks {
                     .lightLevel(level -> 3)
                     .hasPostProcess(ModBlocks::always)
                     .emissiveRendering(ModBlocks::always)
-                    .ignitedByLava());
+                    .ignitedByLava()
+                    .setId(key(Constants.GLOW_BLACK_CARPET_ID)));
 
     private static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
         return true;
+    }
+
+    private static ResourceKey<Block> key(String name) {
+        return ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name));
     }
 }
