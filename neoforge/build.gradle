@@ -36,3 +36,7 @@ neoForge {
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+dependencies {
+    implementation("net.anvian.anvianslib:anvianslib-neoforge-1.21:${anvianslib}")
+}

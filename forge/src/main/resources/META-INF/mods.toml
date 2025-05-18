@@ -12,25 +12,21 @@ logoFile = "${mod_id}.png"
 credits = "${credits}"
 authors = "${mod_author}"
 description = '''${description}'''
-[[mixins]]
-config = "${mod_id}.mixins.json"
-[[mixins]]
-config = "${mod_id}.neoforge.mixins.json"
-[[dependencies.${ mod_id }]]
-modId = "neoforge"
-type = "required"
-versionRange = "[${neoforge_version},)"
+[[dependencies.${mod_id}]]
+modId = "forge"
+mandatory = true
+versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.${ mod_id }]]
+[[dependencies.${mod_id}]]
 modId = "minecraft"
-type = "required"
+mandatory = true
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "anvianslib"
-type = "required"
+mandatory = true
 versionRange = "[${anvianslib}, )"
 ordering = "NONE"
 side = "BOTH"
