@@ -11,39 +11,39 @@ public class ModItemRegistry {
         Constants.LOG.info("Registering items for " + Constants.MOD_NAME + "...");
 
         //wool
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_white_wool"), ModItems.GLOW_WHITE_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_orange_wool"), ModItems.GLOW_ORANGE_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_magenta_wool"), ModItems.GLOW_MAGENTA_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_light_blue_wool"), ModItems.GLOW_LIGHT_BLUE_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_yellow_wool"), ModItems.GLOW_YELLOW_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_lime_wool"), ModItems.GLOW_LIME_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_pink_wool"), ModItems.GLOW_PINK_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_gray_wool"), ModItems.GLOW_GRAY_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_light_gray_wool"), ModItems.GLOW_LIGHT_GRAY_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_cyan_wool"), ModItems.GLOW_CYAN_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_purple_wool"), ModItems.GLOW_PURPLE_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_blue_wool"), ModItems.GLOW_BLUE_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_brown_wool"), ModItems.GLOW_BROWN_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_green_wool"), ModItems.GLOW_GREEN_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_red_wool"), ModItems.GLOW_RED_WOOL);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_black_wool"), ModItems.GLOW_BLACK_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_WHITE_WOOL_ID), ModItems.GLOW_WHITE_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_ORANGE_WOOL_ID), ModItems.GLOW_ORANGE_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_MAGENTA_WOOL_ID), ModItems.GLOW_MAGENTA_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_LIGHT_BLUE_WOOL_ID), ModItems.GLOW_LIGHT_BLUE_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_YELLOW_WOOL_ID), ModItems.GLOW_YELLOW_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_LIME_WOOL_ID), ModItems.GLOW_LIME_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_PINK_WOOL_ID), ModItems.GLOW_PINK_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_GRAY_WOOL_ID), ModItems.GLOW_GRAY_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_LIGHT_GRAY_WOOL_ID), ModItems.GLOW_LIGHT_GRAY_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_CYAN_WOOL_ID), ModItems.GLOW_CYAN_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_PURPLE_WOOL_ID), ModItems.GLOW_PURPLE_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_BLUE_WOOL_ID), ModItems.GLOW_BLUE_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_BROWN_WOOL_ID), ModItems.GLOW_BROWN_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_GREEN_WOOL_ID), ModItems.GLOW_GREEN_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_RED_WOOL_ID), ModItems.GLOW_RED_WOOL);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_BLACK_WOOL_ID), ModItems.GLOW_BLACK_WOOL);
 
         //carpet
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_white_carpet"), ModItems.GLOW_WHITE_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_orange_carpet"), ModItems.GLOW_ORANGE_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_magenta_carpet"), ModItems.GLOW_MAGENTA_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_light_blue_carpet"), ModItems.GLOW_LIGHT_BLUE_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_yellow_carpet"), ModItems.GLOW_YELLOW_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_lime_carpet"), ModItems.GLOW_LIME_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_pink_carpet"), ModItems.GLOW_PINK_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_gray_carpet"), ModItems.GLOW_GRAY_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_light_gray_carpet"), ModItems.GLOW_LIGHT_GRAY_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_cyan_carpet"), ModItems.GLOW_CYAN_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_purple_carpet"), ModItems.GLOW_PURPLE_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_blue_carpet"), ModItems.GLOW_BLUE_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_brown_carpet"), ModItems.GLOW_BROWN_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_green_carpet"), ModItems.GLOW_GREEN_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_red_carpet"), ModItems.GLOW_RED_CARPET);
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, "glow_black_carpet"), ModItems.GLOW_BLACK_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_WHITE_CARPET_ID), ModItems.GLOW_WHITE_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_ORANGE_CARPET_ID), ModItems.GLOW_ORANGE_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_MAGENTA_CARPET_ID), ModItems.GLOW_MAGENTA_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_LIGHT_BLUE_CARPET_ID), ModItems.GLOW_LIGHT_BLUE_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_YELLOW_CARPET_ID), ModItems.GLOW_YELLOW_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_LIME_CARPET_ID), ModItems.GLOW_LIME_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_PINK_CARPET_ID), ModItems.GLOW_PINK_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_GRAY_CARPET_ID), ModItems.GLOW_GRAY_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_LIGHT_GRAY_CARPET_ID), ModItems.GLOW_LIGHT_GRAY_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_CYAN_CARPET_ID), ModItems.GLOW_CYAN_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_PURPLE_CARPET_ID), ModItems.GLOW_PURPLE_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_BLUE_CARPET_ID), ModItems.GLOW_BLUE_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_BROWN_CARPET_ID), ModItems.GLOW_BROWN_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_GREEN_CARPET_ID), ModItems.GLOW_GREEN_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_RED_CARPET_ID), ModItems.GLOW_RED_CARPET);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Constants.MOD_ID, Constants.GLOW_BLACK_CARPET_ID), ModItems.GLOW_BLACK_CARPET);
     }
 }
