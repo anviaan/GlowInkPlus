@@ -1,1 +1,3 @@
-- Port to 1.21.2
+- Forge support added
+- Anvian's lib added as a dependency
+- Support to Minecraft 1.21.5

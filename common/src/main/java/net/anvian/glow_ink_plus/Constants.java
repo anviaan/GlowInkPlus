@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 public class Constants {
     public static final String MOD_ID = "glow_ink_plus";
     public static final String MOD_NAME = "Glow Ink Plus Mod";
+    public static final String MOD_VERSION = "1.3";
     public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
 
     // ids
