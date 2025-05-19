@@ -1,6 +1,6 @@
 plugins {
     id 'multiloader-loader'
-    id 'net.neoforged.gradle.userdev' version '7.0.133'
+    id 'net.neoforged.gradle.userdev' version '7.0.184'
 }
 
 def at = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -33,5 +33,5 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
     implementation "net.neoforged:neoforge:${neoforge_version}"
-    implementation("net.anvian.anvianslib:anvianslib-neoforge-1.20:${anvianslib}")
+    implementation("net.anvian.anvianslib:anvianslib-neoforge-1.20.6:${anvianslib}")
 }
