@@ -64,7 +64,7 @@ sourceSets.main.resources.srcDir 'src/generated/resources'
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
-    implementation("net.anvian.anvianslib:anvianslib-forge-1.20:${anvianslib}")
+    implementation("net.anvian.anvianslib:anvianslib-forge-1.20.1:${anvianslib}")
 }
 
 jar.finalizedBy('reobfJar')
