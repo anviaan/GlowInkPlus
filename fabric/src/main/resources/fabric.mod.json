@@ -28,7 +28,8 @@
         "fabricloader": ">=${fabric_loader_version}",
         "fabric-api": "*",
         "minecraft": "${minecraft_version}",
-        "java": ">=${java_version}"
+        "java": ">=${java_version}",
+        "anvianslib": ">=${anvianslib}"
     },
     "suggests": {
         "another-mod": "*"

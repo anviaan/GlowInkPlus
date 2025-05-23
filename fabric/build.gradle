@@ -14,6 +14,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
     modLocalRuntime("com.terraformersmc:modmenu:9.0.0")
+    modImplementation("net.anvian.anvianslib:anvianslib-fabric-1.20:${anvianslib}")
 }
 loom {
     def aw = project(":common").file("src/main/resources/${mod_id}.accesswidener")
