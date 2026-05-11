@@ -3,8 +3,8 @@ package net.anvian.glow_ink_plus.core.item;
 import net.anvian.glow_ink_plus.Constants;
 import net.anvian.glow_ink_plus.core.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
@@ -45,6 +45,6 @@ public class ModItems {
     public static final BlockItem GLOW_BLACK_CARPET = new BlockItem(ModBlocks.GLOW_BLACK_CARPET, new Item.Properties().useBlockDescriptionPrefix().setId(key(Constants.GLOW_BLACK_CARPET_ID)));
 
     private static ResourceKey<Item> key(String name) {
-        return ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name));
+        return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Constants.MOD_ID, name));
     }
 }

@@ -2,13 +2,12 @@ package net.anvian.glow_ink_plus.core;
 
 import net.anvian.glow_ink_plus.Constants;
 import net.anvian.glow_ink_plus.core.item.ModItems;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Items;
 
@@ -16,8 +15,8 @@ public class ModTab {
     public static void registerTab() {
         Constants.LOG.info("Registering creative tab for " + Constants.MOD_ID);
 
-        ResourceKey<CreativeModeTab> tab = ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "tab"));
-        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, tab, FabricItemGroup.builder()
+        ResourceKey<CreativeModeTab> tab = ResourceKey.create(Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(Constants.MOD_ID, "tab"));
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, tab, CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
                 .icon(Items.GLOW_INK_SAC::getDefaultInstance)
                 .title(Component.translatable("itemGroup.glow_ink_plus"))
                 .displayItems((context, entries) -> {

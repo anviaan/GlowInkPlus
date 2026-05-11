@@ -4,8 +4,8 @@ import net.anvian.glow_ink_plus.Constants;
 import net.anvian.glow_ink_plus.core.block.custom.ModWoolCarpetBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -24,7 +24,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_WHITE_WOOL_ID)));
@@ -35,7 +35,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_ORANGE_WOOL_ID)));
@@ -46,7 +46,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_MAGENTA_WOOL_ID)));
@@ -57,7 +57,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_LIGHT_BLUE_WOOL_ID)));
@@ -68,7 +68,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_YELLOW_WOOL_ID)));
@@ -79,7 +79,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_LIME_WOOL_ID)));
@@ -90,7 +90,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_PINK_WOOL_ID)));
@@ -101,7 +101,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_GRAY_WOOL_ID)));
@@ -112,7 +112,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_LIGHT_GRAY_WOOL_ID)));
@@ -123,7 +123,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_CYAN_WOOL_ID)));
@@ -134,7 +134,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_PURPLE_WOOL_ID)));
@@ -145,7 +145,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BLUE_WOOL_ID)));
@@ -156,7 +156,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BROWN_WOOL_ID)));
@@ -167,7 +167,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_GREEN_WOOL_ID)));
@@ -178,7 +178,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_RED_WOOL_ID)));
@@ -189,7 +189,7 @@ public final class ModBlocks {
                     .strength(0.8F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BLACK_WOOL_ID)));
@@ -202,7 +202,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_WHITE_CARPET_ID)));
@@ -213,7 +213,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_ORANGE_CARPET_ID)));
@@ -224,7 +224,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_MAGENTA_CARPET_ID)));
@@ -235,7 +235,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_LIGHT_BLUE_CARPET_ID)));
@@ -246,7 +246,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_YELLOW_CARPET_ID)));
@@ -257,7 +257,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_LIME_CARPET_ID)));
@@ -268,7 +268,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_PINK_CARPET_ID)));
@@ -279,7 +279,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_GRAY_CARPET_ID)));
@@ -290,7 +290,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_LIGHT_GRAY_CARPET_ID)));
@@ -301,7 +301,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_CYAN_CARPET_ID)));
@@ -312,7 +312,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_PURPLE_CARPET_ID)));
@@ -323,7 +323,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BLUE_CARPET_ID)));
@@ -334,7 +334,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BROWN_CARPET_ID)));
@@ -345,7 +345,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_GREEN_CARPET_ID)));
@@ -356,7 +356,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_RED_CARPET_ID)));
@@ -367,7 +367,7 @@ public final class ModBlocks {
                     .strength(0.1F)
                     .sound(SoundType.WOOL)
                     .lightLevel(level -> 3)
-                    .hasPostProcess(ModBlocks::always)
+                    .postProcess(ModBlocks::alwaysPostProcess)
                     .emissiveRendering(ModBlocks::always)
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BLACK_CARPET_ID)));
@@ -376,7 +376,11 @@ public final class ModBlocks {
         return true;
     }
 
+    private static BlockPos alwaysPostProcess(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+        return blockPos;
+    }
+
     private static ResourceKey<Block> key(String name) {
-        return ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name));
+        return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Constants.MOD_ID, name));
     }
 }
