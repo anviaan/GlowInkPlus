@@ -372,7 +372,7 @@ public final class ModBlocks {
                     .ignitedByLava()
                     .setId(key(Constants.GLOW_BLACK_CARPET_ID)));
 
-    private static boolean always(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+    private static boolean always(BlockState blockState) {
         return true;
     }
 
