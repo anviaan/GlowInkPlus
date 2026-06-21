@@ -1,0 +1,10 @@
+{
+    "type": "glow_ink_plus:glow_armor_smithing",
+    "base": [
+        "minecraft:leather_helmet",
+        "minecraft:leather_chestplate",
+        "minecraft:leather_leggings",
+        "minecraft:leather_boots"
+    ],
+    "addition": "minecraft:glow_ink_sac"
+}

@@ -4,12 +4,15 @@
     "package": "net.anvian.glow_ink_plus.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
-        "SheepMixin"
+        "SheepMixin",
+        "CauldronInteractionsMixin"
     ],
     "client": [
         "client.SheepRenderStateMixin",
         "client.SheepRendererMixin",
-        "client.SheepWoolLayerMixin"
+        "client.SheepWoolLayerMixin",
+        "client.HumanoidArmorLayerMixin",
+        "client.ItemTooltipMixin"
     ],
     "server": [
     ],
