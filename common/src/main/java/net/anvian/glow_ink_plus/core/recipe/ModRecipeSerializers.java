@@ -4,4 +4,5 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 
 public class ModRecipeSerializers {
     public static final RecipeSerializer<GlowArmorSmithingRecipe> GLOW_ARMOR_SMITHING = GlowArmorSmithingRecipe.SERIALIZER;
+    public static final RecipeSerializer<GlowBannerCraftingRecipe> GLOW_BANNER_CRAFTING = GlowBannerCraftingRecipe.SERIALIZER;
 }

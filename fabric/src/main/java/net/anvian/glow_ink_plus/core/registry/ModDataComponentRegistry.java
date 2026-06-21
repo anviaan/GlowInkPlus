@@ -16,5 +16,9 @@ public class ModDataComponentRegistry {
         Registry.register(BuiltInRegistries.RECIPE_SERIALIZER,
                 Identifier.fromNamespaceAndPath(Constants.MOD_ID, "glow_armor_smithing"),
                 ModRecipeSerializers.GLOW_ARMOR_SMITHING);
+
+        Registry.register(BuiltInRegistries.RECIPE_SERIALIZER,
+                Identifier.fromNamespaceAndPath(Constants.MOD_ID, "glow_banner_crafting"),
+                ModRecipeSerializers.GLOW_BANNER_CRAFTING);
     }
 }

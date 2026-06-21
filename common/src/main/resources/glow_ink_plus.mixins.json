@@ -5,14 +5,19 @@
     "compatibilityLevel": "JAVA_21",
     "mixins": [
         "SheepMixin",
-        "CauldronInteractionsMixin"
+        "CauldronInteractionsMixin",
+        "ShieldDecorationRecipeMixin"
     ],
     "client": [
         "client.SheepRenderStateMixin",
         "client.SheepRendererMixin",
         "client.SheepWoolLayerMixin",
         "client.HumanoidArmorLayerMixin",
-        "client.ItemTooltipMixin"
+        "client.ItemTooltipMixin",
+        "client.BannerRenderStateMixin",
+        "client.BannerRendererMixin",
+        "client.BannerSpecialRendererMixin",
+        "client.ShieldSpecialRendererMixin"
     ],
     "server": [
     ],
