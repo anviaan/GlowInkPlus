@@ -1,6 +1,5 @@
 {
   "itemGroup.glow_ink_plus": "Glow Ink Plus Mod",
-
   "block.glow_ink_plus.glow_white_wool": "Beyaz Parlayan Yün",
   "block.glow_ink_plus.glow_orange_wool": "Turuncu Parlayan Yün",
   "block.glow_ink_plus.glow_magenta_wool": "Eflatun Parlayan Yün",
@@ -17,7 +16,6 @@
   "block.glow_ink_plus.glow_green_wool": "Green Parlayan Yün",
   "block.glow_ink_plus.glow_red_wool": "Kırmızı Parlayan Yün",
   "block.glow_ink_plus.glow_black_wool": "Siyah Parlayan Yün",
-
   "block.glow_ink_plus.glow_white_carpet": "Beyaz Parlayan Halı",
   "block.glow_ink_plus.glow_orange_carpet": "Turuncu Parlayan Halı",
   "block.glow_ink_plus.glow_magenta_carpet": "Eflatun Parlayan Halı",
@@ -33,5 +31,6 @@
   "block.glow_ink_plus.glow_brown_carpet": "Kahverengi Parlayan Halı",
   "block.glow_ink_plus.glow_green_carpet": "Green Parlayan Halı",
   "block.glow_ink_plus.glow_red_carpet": "Red Parlayan Halı",
-  "block.glow_ink_plus.glow_black_carpet": "Black Parlayan Halı"
+  "block.glow_ink_plus.glow_black_carpet": "Black Parlayan Halı",
+  "item.glow_ink_plus.glowing_tooltip": "Parlayan"
 }

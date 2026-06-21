@@ -1,6 +1,5 @@
 {
   "itemGroup.glow_ink_plus": "Glow Ink Plus Mod",
-
   "block.glow_ink_plus.glow_white_wool": "Lana blanca luminosa",
   "block.glow_ink_plus.glow_orange_wool": "Lana naranja luminosa",
   "block.glow_ink_plus.glow_magenta_wool": "Lana magenta luminosa",
@@ -17,7 +16,6 @@
   "block.glow_ink_plus.glow_green_wool": "Lana verde luminosa",
   "block.glow_ink_plus.glow_red_wool": "Lana roja luminosa",
   "block.glow_ink_plus.glow_black_wool": "Lana negra luminosa",
-
   "block.glow_ink_plus.glow_white_carpet": "Alfombra blanca luminosa",
   "block.glow_ink_plus.glow_orange_carpet": "Alfombra naranja luminosa",
   "block.glow_ink_plus.glow_magenta_carpet": "Alfombra magenta luminosa",
@@ -33,5 +31,6 @@
   "block.glow_ink_plus.glow_brown_carpet": "Alfombra café luminosa",
   "block.glow_ink_plus.glow_green_carpet": "Alfombra verde luminosa",
   "block.glow_ink_plus.glow_red_carpet": "Alfombra roja luminosa",
-  "block.glow_ink_plus.glow_black_carpet": "Alfombra negra luminosa"
+  "block.glow_ink_plus.glow_black_carpet": "Alfombra negra luminosa",
+  "item.glow_ink_plus.glowing_tooltip": "Brillante"
 }

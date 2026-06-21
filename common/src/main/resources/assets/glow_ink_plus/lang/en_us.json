@@ -33,5 +33,7 @@
   "block.glow_ink_plus.glow_brown_carpet": "Brown Glow Carpet",
   "block.glow_ink_plus.glow_green_carpet": "Green Glow Carpet",
   "block.glow_ink_plus.glow_red_carpet": "Red Glow Carpet",
-  "block.glow_ink_plus.glow_black_carpet": "Black Glow Carpet"
+  "block.glow_ink_plus.glow_black_carpet": "Black Glow Carpet",
+
+  "item.glow_ink_plus.glowing_tooltip": "Glowing"
 }
