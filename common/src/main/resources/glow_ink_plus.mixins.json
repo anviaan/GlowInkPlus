@@ -4,8 +4,12 @@
     "package": "net.anvian.glow_ink_plus.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
+        "SheepMixin"
     ],
     "client": [
+        "client.SheepRenderStateMixin",
+        "client.SheepRendererMixin",
+        "client.SheepWoolLayerMixin"
     ],
     "server": [
     ],
