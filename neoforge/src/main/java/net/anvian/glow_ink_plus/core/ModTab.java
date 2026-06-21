@@ -1,11 +1,15 @@
 package net.anvian.glow_ink_plus.core;
 
 import net.anvian.glow_ink_plus.Constants;
+import net.anvian.glow_ink_plus.core.component.ModDataComponents;
 import net.anvian.glow_ink_plus.core.registry.ModItemRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.Unit;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -29,5 +33,20 @@ public class ModTab {
             return;
 
         ModItemRegistry.ITEMS.getEntries().stream().map(DeferredHolder::get).forEach(event::accept);
+
+        // Glowing Leather Armor
+        event.accept(glowingStack(Items.LEATHER_HELMET));
+        event.accept(glowingStack(Items.LEATHER_CHESTPLATE));
+        event.accept(glowingStack(Items.LEATHER_LEGGINGS));
+        event.accept(glowingStack(Items.LEATHER_BOOTS));
+
+        // Glowing Banners
+        Items.BANNER.forEach(banner -> event.accept(glowingStack(banner)));
+    }
+
+    private static ItemStack glowingStack(ItemLike item) {
+        ItemStack stack = new ItemStack(item);
+        stack.set(ModDataComponents.GLOWING, Unit.INSTANCE);
+        return stack;
     }
 }
