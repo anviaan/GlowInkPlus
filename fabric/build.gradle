@@ -2,12 +2,22 @@ plugins {
     id 'multiloader-loader'
     id 'net.fabricmc.fabric-loom'
 }
-dependencies {
-    minecraft "com.mojang:minecraft:${minecraft_version}"
-    implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
-    implementation("net.anvian.anvianslib:anvianslib-fabric-26.1:${anvianslib}")
+
+repositories {
+    maven {
+        name = "Mod Menu"
+        url = "https://maven.terraformersmc.com/"
+    }
 }
+
+dependencies {
+    minecraft("com.mojang:minecraft:${minecraft_version}")
+    implementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
+    implementation("net.fabricmc.fabric-api:fabric-api:${fabric_version}")
+    implementation("net.anvian.anvianslib:anvianslib-fabric-26.1:${anvianslib}")
+    localRuntime("com.terraformersmc:modmenu:20.0.1")
+}
+
 loom {
     def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
     if (aw.exists()) {
@@ -30,21 +40,20 @@ loom {
 }
 
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
-['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements'].each { variant ->
-    configurations.named("$variant") {
-        attributes { attribute(loaderAttribute, 'fabric') }
-    }
-}
-sourceSets.configureEach {
-    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant ->
-        configurations.named("$variant") {
-            attributes { attribute(loaderAttribute, 'fabric') }
+['apiElements', 'runtimeElements', 'sourcesElements', 'javadocElements', 'includeInternal', 'modCompileClasspath'].each { variant ->
+    configurations.named(variant) {
+        attributes {
+            attribute(loaderAttribute, 'fabric')
         }
     }
 }
-configurations.named('includeInternal') {
-    attributes { attribute(loaderAttribute, 'fabric') }
-}
-configurations.named('modCompileClasspath') {
-    attributes { attribute(loaderAttribute, 'fabric') }
+
+sourceSets.configureEach {
+    [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant ->
+        configurations.named(variant) {
+            attributes {
+                attribute(loaderAttribute, 'fabric')
+            }
+        }
+    }
 }

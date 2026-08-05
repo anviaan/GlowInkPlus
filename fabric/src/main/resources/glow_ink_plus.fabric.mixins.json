@@ -4,6 +4,7 @@
     "package": "net.anvian.glow_ink_plus.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
+        "FabricSheepStateMixin"
     ],
     "client": [
     ],

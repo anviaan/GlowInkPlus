@@ -1,6 +1,7 @@
 package net.anvian.glow_ink_plus;
 
 import net.anvian.glow_ink_plus.core.ModTab;
+import net.anvian.glow_ink_plus.core.attachment.ModAttachments;
 import net.anvian.glow_ink_plus.core.registry.ModBlockRegistry;
 import net.anvian.glow_ink_plus.core.registry.ModDataComponentRegistry;
 import net.anvian.glow_ink_plus.core.registry.ModItemRegistry;
@@ -17,5 +18,6 @@ public class GlowInkPlusNeoForge {
         ModBlockRegistry.BLOCKS.register(eventBus);
         ModItemRegistry.ITEMS.register(eventBus);
         ModTab.TABS.register(eventBus);
+        ModAttachments.ATTACHMENTS.register(eventBus);
     }
 }
