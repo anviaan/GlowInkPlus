@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "glow_ink_plus:glow_white_stained_glass",
+    "glow_ink_plus:glow_orange_stained_glass",
+    "glow_ink_plus:glow_magenta_stained_glass",
+    "glow_ink_plus:glow_light_blue_stained_glass",
+    "glow_ink_plus:glow_yellow_stained_glass",
+    "glow_ink_plus:glow_lime_stained_glass",
+    "glow_ink_plus:glow_pink_stained_glass",
+    "glow_ink_plus:glow_gray_stained_glass",
+    "glow_ink_plus:glow_light_gray_stained_glass",
+    "glow_ink_plus:glow_cyan_stained_glass",
+    "glow_ink_plus:glow_purple_stained_glass",
+    "glow_ink_plus:glow_blue_stained_glass",
+    "glow_ink_plus:glow_brown_stained_glass",
+    "glow_ink_plus:glow_green_stained_glass",
+    "glow_ink_plus:glow_red_stained_glass",
+    "glow_ink_plus:glow_black_stained_glass"
+  ]
+}

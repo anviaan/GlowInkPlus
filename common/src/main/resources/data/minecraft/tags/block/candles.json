@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "glow_ink_plus:glow_white_candle",
+    "glow_ink_plus:glow_orange_candle",
+    "glow_ink_plus:glow_magenta_candle",
+    "glow_ink_plus:glow_light_blue_candle",
+    "glow_ink_plus:glow_yellow_candle",
+    "glow_ink_plus:glow_lime_candle",
+    "glow_ink_plus:glow_pink_candle",
+    "glow_ink_plus:glow_gray_candle",
+    "glow_ink_plus:glow_light_gray_candle",
+    "glow_ink_plus:glow_cyan_candle",
+    "glow_ink_plus:glow_purple_candle",
+    "glow_ink_plus:glow_blue_candle",
+    "glow_ink_plus:glow_brown_candle",
+    "glow_ink_plus:glow_green_candle",
+    "glow_ink_plus:glow_red_candle",
+    "glow_ink_plus:glow_black_candle"
+  ]
+}

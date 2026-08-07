@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glow_bed",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "XXX"
+  ],
+  "key": {
+    "#": "glow_ink_plus:glow_orange_wool",
+    "X": "#minecraft:planks"
+  },
+  "result": {
+    "id": "glow_ink_plus:glow_orange_bed"
+  },
+  "show_notification": true
+}
