@@ -2,11 +2,18 @@ plugins {
     id 'multiloader-loader'
     id 'net.fabricmc.fabric-loom'
 }
+repositories {
+    maven {
+        name = "Mod Menu"
+        url = "https://maven.terraformersmc.com/"
+    }
+}
 dependencies {
-    minecraft "com.mojang:minecraft:${minecraft_version}"
-    implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+    minecraft("com.mojang:minecraft:${minecraft_version}")
+    implementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
+    implementation("net.fabricmc.fabric-api:fabric-api:${fabric_version}")
     implementation("net.anvian.anvianslib:anvianslib-fabric-26.1:${anvianslib}")
+    localRuntime("com.terraformersmc:modmenu:18.0.0")
 }
 loom {
     def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")

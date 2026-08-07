@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "glow_ink_plus:glow_white_terracotta",
+    "glow_ink_plus:glow_orange_terracotta",
+    "glow_ink_plus:glow_magenta_terracotta",
+    "glow_ink_plus:glow_light_blue_terracotta",
+    "glow_ink_plus:glow_yellow_terracotta",
+    "glow_ink_plus:glow_lime_terracotta",
+    "glow_ink_plus:glow_pink_terracotta",
+    "glow_ink_plus:glow_gray_terracotta",
+    "glow_ink_plus:glow_light_gray_terracotta",
+    "glow_ink_plus:glow_cyan_terracotta",
+    "glow_ink_plus:glow_purple_terracotta",
+    "glow_ink_plus:glow_blue_terracotta",
+    "glow_ink_plus:glow_brown_terracotta",
+    "glow_ink_plus:glow_green_terracotta",
+    "glow_ink_plus:glow_red_terracotta",
+    "glow_ink_plus:glow_black_terracotta"
+  ]
+}

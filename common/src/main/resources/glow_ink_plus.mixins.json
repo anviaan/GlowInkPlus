@@ -6,7 +6,8 @@
     "mixins": [
         "SheepMixin",
         "CauldronInteractionsMixin",
-        "ShieldDecorationRecipeMixin"
+        "ShieldDecorationRecipeMixin",
+        "BedBlockEntityTypeMixin"
     ],
     "client": [
         "client.SheepRenderStateMixin",

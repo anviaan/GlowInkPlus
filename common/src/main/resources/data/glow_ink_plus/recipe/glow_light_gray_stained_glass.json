@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glow_stained_glass",
+  "category": "building",
+  "pattern": [
+    "###",
+    "#@#",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "minecraft:light_gray_stained_glass"
+    ],
+    "@": [
+      "minecraft:glow_ink_sac"
+    ]
+  },
+  "result": {
+    "id": "glow_ink_plus:glow_light_gray_stained_glass",
+    "count": 8
+  },
+  "show_notification": true
+}

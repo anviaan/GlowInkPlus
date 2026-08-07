@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "glow_ink_plus:glow_white_bed",
+    "glow_ink_plus:glow_orange_bed",
+    "glow_ink_plus:glow_magenta_bed",
+    "glow_ink_plus:glow_light_blue_bed",
+    "glow_ink_plus:glow_yellow_bed",
+    "glow_ink_plus:glow_lime_bed",
+    "glow_ink_plus:glow_pink_bed",
+    "glow_ink_plus:glow_gray_bed",
+    "glow_ink_plus:glow_light_gray_bed",
+    "glow_ink_plus:glow_cyan_bed",
+    "glow_ink_plus:glow_purple_bed",
+    "glow_ink_plus:glow_blue_bed",
+    "glow_ink_plus:glow_brown_bed",
+    "glow_ink_plus:glow_green_bed",
+    "glow_ink_plus:glow_red_bed",
+    "glow_ink_plus:glow_black_bed"
+  ]
+}

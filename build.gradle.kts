@@ -1,6 +1,6 @@
 plugins {
-    id("net.fabricmc.fabric-loom") version "1.15.5" apply false
-    id("net.neoforged.moddev") version "2.0.141" apply false
+    id("net.fabricmc.fabric-loom") version "1.16.3" apply false
+    id("net.neoforged.moddev") version "2.0.143" apply false
 }
 
 val MOD_VERSION = project.property("version") as String

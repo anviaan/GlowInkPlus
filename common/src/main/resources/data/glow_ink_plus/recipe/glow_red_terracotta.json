@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glow_red_terracotta",
+  "category": "building",
+  "pattern": [
+    "#@"
+  ],
+  "key": {
+    "#": [
+      "minecraft:red_terracotta"
+    ],
+    "@": [
+      "minecraft:glow_ink_sac"
+    ]
+  },
+  "result": {
+    "id": "glow_ink_plus:glow_red_terracotta",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glow_stained_glass_pane",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": [
+      "glow_ink_plus:glow_orange_stained_glass"
+    ]
+  },
+  "result": {
+    "id": "glow_ink_plus:glow_orange_stained_glass_pane",
+    "count": 16
+  },
+  "show_notification": true
+}

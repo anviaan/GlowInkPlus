@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glow_yellow_concrete_powder",
+  "category": "building",
+  "pattern": [
+    "#@"
+  ],
+  "key": {
+    "#": [
+      "minecraft:yellow_concrete_powder"
+    ],
+    "@": [
+      "minecraft:glow_ink_sac"
+    ]
+  },
+  "result": {
+    "id": "glow_ink_plus:glow_yellow_concrete_powder",
+    "count": 1
+  },
+  "show_notification": true
+}

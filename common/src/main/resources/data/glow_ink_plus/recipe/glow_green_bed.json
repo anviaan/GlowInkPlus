@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glow_bed",
+  "category": "misc",
+  "pattern": [
+    "#@"
+  ],
+  "key": {
+    "#": [
+      "minecraft:green_bed"
+    ],
+    "@": [
+      "minecraft:glow_ink_sac"
+    ]
+  },
+  "result": {
+    "id": "glow_ink_plus:glow_green_bed",
+    "count": 1
+  },
+  "show_notification": true
+}

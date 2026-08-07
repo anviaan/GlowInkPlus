@@ -2,9 +2,6 @@ package net.anvian.glow_ink_plus.mixin;
 
 import net.anvian.glow_ink_plus.duck.GlowingSheepAccessor;
 import net.anvian.glow_ink_plus.core.item.ModItems;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -17,8 +14,6 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.storage.ValueInput;
-import net.minecraft.world.level.storage.ValueOutput;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,35 +22,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Sheep.class)
-public abstract class SheepMixin implements GlowingSheepAccessor {
-
-    @Unique
-    private static final EntityDataAccessor<Boolean> DATA_GLOWING_WOOL =
-            SynchedEntityData.defineId(Sheep.class, EntityDataSerializers.BOOLEAN);
-
-    @Inject(method = "defineSynchedData", at = @At("TAIL"))
-    private void onDefineSynchedData(SynchedEntityData.Builder builder, CallbackInfo ci) {
-        builder.define(DATA_GLOWING_WOOL, false);
-    }
-
-    @Inject(method = "addAdditionalSaveData", at = @At("TAIL"))
-    private void onAddAdditionalSaveData(ValueOutput output, CallbackInfo ci) {
-        output.putBoolean("GlowingWool", this.glowInkPlus$isGlowingWool());
-    }
-
-    @Inject(method = "readAdditionalSaveData", at = @At("TAIL"))
-    private void onReadAdditionalSaveData(ValueInput input, CallbackInfo ci) {
-        this.glowInkPlus$setGlowingWool(input.getBooleanOr("GlowingWool", false));
-    }
+public abstract class SheepMixin {
 
     @Inject(method = "mobInteract", at = @At("HEAD"), cancellable = true)
     private void onMobInteract(Player player, InteractionHand hand, CallbackInfoReturnable<InteractionResult> cir) {
         Sheep self = (Sheep) (Object) this;
+        GlowingSheepAccessor state = (GlowingSheepAccessor) (Object) this;
         ItemStack itemStack = player.getItemInHand(hand);
         if (itemStack.is(Items.GLOW_INK_SAC)) {
             if (self.level() instanceof ServerLevel) {
-                if (!self.isSheared() && !this.glowInkPlus$isGlowingWool()) {
-                    this.glowInkPlus$setGlowingWool(true);
+                if (!self.isSheared() && !state.glowInkPlus$isGlowingWool()) {
+                    state.glowInkPlus$setGlowingWool(true);
                     if (!player.getAbilities().instabuild) {
                         itemStack.shrink(1);
                     }
@@ -70,7 +47,8 @@ public abstract class SheepMixin implements GlowingSheepAccessor {
 
     @Inject(method = "shear", at = @At("HEAD"), cancellable = true)
     private void onShear(ServerLevel level, SoundSource soundSource, ItemStack tool, CallbackInfo ci) {
-        if (!this.glowInkPlus$isGlowingWool()) return;
+        GlowingSheepAccessor state = (GlowingSheepAccessor) (Object) this;
+        if (!state.glowInkPlus$isGlowingWool()) return;
 
         Sheep self = (Sheep) (Object) this;
         ci.cancel();
@@ -92,16 +70,6 @@ public abstract class SheepMixin implements GlowingSheepAccessor {
         }
 
         self.setSheared(true);
-    }
-
-    @Override
-    public boolean glowInkPlus$isGlowingWool() {
-        return ((Sheep) (Object) this).getEntityData().get(DATA_GLOWING_WOOL);
-    }
-
-    @Override
-    public void glowInkPlus$setGlowingWool(boolean glowing) {
-        ((Sheep) (Object) this).getEntityData().set(DATA_GLOWING_WOOL, glowing);
     }
 
     @Unique
